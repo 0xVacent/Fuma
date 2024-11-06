@@ -1,0 +1,17 @@
+div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+button {
+  font-size: 2rem;
+  background-color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  border: 3px solid black;
+}

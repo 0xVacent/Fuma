@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<div>
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <section>
+    <label for="username">Username</label>
+      <input type="text" id="username" formControlName="username" placeholder="Pepitohuevo02">
+  </section>
+  <section>
+    <label for="password">Password</label>
+      <input type="password" id="password" formControlName="password" placeholder="******">
+  </section>
+
+  <button type="submit" [disabled]="!loginForm.valid">Login</button>
+</form>
+</div>

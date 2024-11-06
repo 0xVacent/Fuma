@@ -1,0 +1,7 @@
+<div *ngIf="id === ''">
+  <button [routerLink]="['/login']">Login</button>
+  <button [routerLink]="['/signup']">Sign Up</button>
+</div>
+<div *ngIf="id !== ''">
+  <button (click)="logout(); ngOnInit()">Logout</button>
+</div>

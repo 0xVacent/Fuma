@@ -1,0 +1,84 @@
+<app-navbar></app-navbar>
+
+<div>
+<h1>Hi {{ user.username}}</h1>
+
+<table>
+  <tr class="headers">
+    <td>
+      Type
+    </td>
+    <td>
+      Amount
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Cigarretes
+    </td>
+    <td>
+      {{user.smoked.cigarretes}}
+    </td>
+    <button (click)="user.smoked.cigarretes = user.smoked.cigarretes + 1">+</button>
+     </tr>
+  <tr>
+    <td>
+      Handmade Cigarretes
+    </td>
+    <td>
+      {{user.smoked.handmade_cigarretes}}
+    </td>
+    <button (click)="user.smoked.handmade_cigarretes = user.smoked.handmade_cigarretes + 1">+</button>
+  </tr>
+  <tr>
+    <td>
+      Cigars
+    </td>
+    <td>
+      {{user.smoked.cigars}}
+    </td>
+    <button (click)="user.smoked.cigars = user.smoked.cigars + 1">+</button>
+  </tr>
+  <tr>
+    <td>
+      Vapes
+    </td>
+    <td>
+      {{user.smoked.vapes}}
+    </td>
+    <button (click)="user.smoked.vapes = user.smoked.vapes + 1">+</button>
+  </tr>
+  <tr>
+    <td>
+      Weed
+    </td>
+    <td>
+      {{user.smoked.weed}}
+    </td>
+    <button (click)="user.smoked.weed = user.smoked.weed + 1">+</button>
+  </tr>
+  <tr>
+    <td>
+      Blunts
+    </td>
+    <td>
+      {{user.smoked.blunts}}
+    </td>
+    <button (click)="user.smoked.blunts = user.smoked.blunts + 1">+</button>
+  </tr>
+  <tr>
+    <td>
+      Lavander
+    </td>
+    <td>
+      {{user.smoked.lavander}}
+    </td>
+    <button (click)="user.smoked.lavander = user.smoked.lavander + 1">+</button>
+  </tr>
+</table>
+<div class="buttons">
+<button class="reset" (click)="reset()">Reset</button>
+<button class="update" (click)="update()">Update</button>
+</div>
+<p>consider stop smoking :P</p>
+</div>

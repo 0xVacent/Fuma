@@ -1,5 +1,19 @@
 {
   "users": [
-    
+    {
+      "id": "0145",
+      "username": "pepe",
+      "email": "pepe@gmail.com",
+      "password": "lol123",
+      "smoked": {
+        "cigarretes": 4,
+        "handmade_cigarretes": 3,
+        "cigars": 3,
+        "vapes": 4,
+        "weed": 2,
+        "blunts": 0,
+        "lavander": 0
+      }
+    }
   ]
 }
